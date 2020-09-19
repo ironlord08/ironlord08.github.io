@@ -40,3 +40,7 @@ footer{
 footer a{
     color: white;
 }
+footer span{
+    font-size: 16px;
+    color: yellow;
+}
