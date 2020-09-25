@@ -1,0 +1,55 @@
+header {
+background-color: darkblue;
+color: white;
+text-align: center;
+border-radius: 10px;
+padding: 1em;
+margin-bottom: 1em;
+}
+h1, h2, h3 {
+    font-family: Squada One, cursive;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+body{
+    font-family: Roboto, sans-serif;
+    padding: 1em;
+}
+section{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    max-width: 500px;
+}
+#gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+img{
+    max-width: 100%;
+    padding-top: 1em;
+}
+footer{
+    text-align: center  ;
+    background-color: darkblue;
+    color: white;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+footer a{
+    color: white;
+}
+footer span{
+    font-size: .9rem;
+    color: yellow;
+}
