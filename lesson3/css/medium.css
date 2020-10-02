@@ -1,0 +1,32 @@
+@media only screen and (min-width: 32.5em) {
+    .mainGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    #persona1{
+        grid-row: 2/3;
+        border: 1px solid black;
+        padding: 1em;
+    }
+    #persona2{
+        grid-row: 2/3;
+        border: 1px solid black;
+        padding: 1em;
+    }
+    #scenarios1{
+        grid-row: 3/4;
+        border: 1px solid black;
+        padding: 1em;
+    }
+    #scenarios2{
+        grid-row: 3/4;
+        border: 1px solid black;
+        padding: 1em;
+    }
+    nav ul{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

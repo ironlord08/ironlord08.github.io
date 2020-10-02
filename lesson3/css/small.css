@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat&display=swap');
+body{
+    background-color: lightgray;
+    font-size: 20px;
+    font-family: Monserrat, sans-serif;
+}
+header{
+    background-color: darkslategray;
+    font-size: 30px;
+    padding: 1em;
+    text-align: center;
+}
+header img{
+    width: 150px;
+}
+h1{
+    margin: 0;
+    color: gold;
+    background-color: darkslategray;
+}
+h1, h2, h3{
+    font-family: Concert One, cursive;
+}
+h2{
+    color: darkblue;
+    font-size: 30px;
+}
+h3{
+    color: darkblue;
+    font-size: 25px;
+}
+main{
+    padding: 1em;
+}
+nav{
+    padding: 1em;
+    background-color: darkslategray;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    padding: .5em;
+    
+}
+a{
+    text-decoration: none;
+}
+nav a{
+    color: gold;
+}
+nav a:hover{
+    background-color: darkslategray;
+    color: gold;
+    text-decoration: underline;
+}
+footer{
+    background-color: darkslategray;
+    color: white;
+    padding: 1em;
+    font-size: 20px;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+footer span{
+    font-size: 16px;
+    color: gold;
+}
