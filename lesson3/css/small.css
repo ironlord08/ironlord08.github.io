@@ -34,7 +34,7 @@ main{
 }
 nav{
     padding: 1em;
-    background-color: darkslategray;
+    background-color: black;
     font-weight: bold;
 }
 nav ul{
@@ -47,6 +47,7 @@ nav ul li{
     
 }
 a{
+    display: block;
     text-decoration: none;
 }
 nav a{

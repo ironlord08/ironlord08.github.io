@@ -21,6 +21,11 @@ h1{
 h1, h2{
     font-family: Concert One, cursive;
 }
+h2{
+    color: darkblue;
+    margin: 1em;
+    text-align: center;
+}
 header p{
     margin: 0;
 }
