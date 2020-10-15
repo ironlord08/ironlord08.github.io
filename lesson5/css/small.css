@@ -36,12 +36,7 @@ body{
     font-family: Monserrat, sans-serif;
     background-color: lightgrey;
 }
-main div{
-    border: 1pt dashed black;
-    padding: 1em;
-    margin: 1em;
-    background-color: white;
-}
+
 nav{
     padding: 0;
     background-color: black;
@@ -73,6 +68,12 @@ nav a:hover{
 .unhide{
     display: block;
 }
+aside{
+    display: none;
+    background-color: gold;
+    padding: .5em;
+    text-align: center;
+}
 .herodiv{
     position: relative;
     background-color: transparent;
@@ -91,6 +92,40 @@ nav a:hover{
 }
 .left{
     text-align: left;
+}
+.forecast h4{
+    background-color: darkslategray;
+    color: gold;
+    margin: 0;
+    padding: .5em;
+}
+.forecast{
+    text-align: center;
+}
+.forecast ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.forecast ul li{
+    flex: 1 1 auto;
+    border: 1px solid black;
+}
+.forecast ul li p{
+    margin-top: 0;
+}
+.forecast ul li img{
+    width: 100%;
+}
+article img{
+    width: 50%;
+    float: right;
+}
+article{
+    padding: 1em;
+    margin: 1em;
+    overflow: hidden;
 }
 footer{
     margin: 0;
@@ -114,9 +149,14 @@ footer span{
 .footercontact{
     background-color: white;
     display: flex;
+    overflow-wrap: anywhere;
+}
+.footercontact img{
+    width: 50%;
 }
 .footercontact div{
     margin: auto;
+    width: 50%;
 }
 .footercontact p{
     padding: .5em;
