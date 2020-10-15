@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat&display=swap');
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    color: white;
+    padding: .5em;
+}
+picture{
+    width: 200px;
+    min-width: 100px;
+}
+picture img{
+    width:100%;
+}
+h1{
+    margin: 0;
+    color: gold;
+}
+h1, h2, h3{
+    font-family: Concert One, cursive;
+}
+h2, h3{
+    color: darkblue;
+    margin: 1em;
+    text-align: center;
+}
+header p{
+    margin: 0;
+}
+header div{
+    margin: 1em;
+}
+body{
+    font-family: Monserrat, sans-serif;
+    background-color: lightgrey;
+}
+main div{
+    border: 1pt dashed black;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
+nav{
+    padding: 0;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: .8em;
+    color: gold;
+}
+nav a:hover{
+    background-color: darkslategray;
+    color: gold;
+    text-decoration: underline;
+}
+.active{
+    text-decoration: underline;
+    color: black;
+    background-color: gold;
+}
+.unhide{
+    display: block;
+}
+.herodiv{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.herodiv img{
+    width: 100%;
+}
+.herosection{
+    background: radial-gradient(white, darkslategrey);
+    padding: .5em;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+footer{
+    margin: 0;
+}
+.footerbar{
+    background-color: darkslategray;
+    color: white;
+    padding: 1em;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+footer p{
+    margin: 0;
+}
+footer span{
+    font-size: 16px;
+    color: gold;
+    margin: 0;
+}
+.footercontact{
+    background-color: white;
+    display: flex;
+}
+.footercontact div{
+    margin: auto;
+}
+.footercontact p{
+    padding: .5em;
+}
