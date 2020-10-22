@@ -9,4 +9,8 @@
         top: 25px;
         padding: .5em;
     }
+    article img{
+        width: 25%;
+        float: right;
+    }
 }

@@ -26,6 +26,12 @@ h2, h3{
     margin: 1em;
     text-align: center;
 }
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 28px;
+}
 header p{
     margin: 0;
 }
@@ -118,14 +124,16 @@ aside{
 .forecast ul li img{
     width: 100%;
 }
-article img{
-    width: 50%;
-    float: right;
-}
 article{
-    padding: 1em;
-    margin: 1em;
+    margin-bottom: 1em;
     overflow: hidden;
+}
+article img{
+    width: 100%;
+    margin: 0;
+}
+article p{
+    padding: 1em;
 }
 footer{
     margin: 0;
