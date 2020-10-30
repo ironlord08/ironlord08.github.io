@@ -134,6 +134,20 @@ article img{
 article p{
     padding: 1em;
 }
+.galleryGrid {
+    margin-bottom: 1em;
+}
+.galleryGrid figure img {
+    width: 100%;
+    max-width: 400px;
+}
+.galleryGrid figure{
+    background-color: white;
+    max-width: 400px;
+}
+.galleryGrid figcaption {
+    padding: .5em;
+}
 footer{
     margin: 0;
 }

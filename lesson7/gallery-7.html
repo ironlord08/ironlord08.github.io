@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Gallery</title>
+    <meta name="description" content="Gallery for Weather Images">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="/lesson6/css/small.css">
+    <link rel="stylesheet" href="/lesson6/css/medium.css">
+    <link rel="stylesheet" href="/lesson6/css/large.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/weather-logo.png" alt="Cloudy Sun Logo Image">
+        </picture>
+        <div>
+            <h1>Cloudy With a Chance of Fun</h1>
+            <p>Never let the weather rain on your parade</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a class="active" href="">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="galleryGrid">
+            <figure><img src="images/Placeholder.png" data-src="images/clouds400.jpg" alt="Image of Clouds"><figcaption>Cloudy Day</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/lightning400.jpg" alt="Image of Lightning"><figcaption>Lightning Strike</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/mountain400.jpg" alt="Image of Snowy Mountain"><figcaption>Snowy Mountain</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/rain400.jpg" alt="Image of Rainstorm"><figcaption>Rainstorm</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/rainbow400.jpg" alt="Image of Rainbow"><figcaption>Double Rainbow</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/snowcabin400.jpg" alt="Image of Snowy Cabin"><figcaption>Snowy Cabin</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/snowflake400.jpg" alt="Image of Snowflake"><figcaption>Snowflake</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/storm400.jpg" alt="Image of Lightning Storm"><figcaption>Lightning Storm</figcaption></figure>
+            <figure><img src="images/Placeholder.png" data-src="images/window400.jpg" alt="Image of Rain on Window"><figcaption>Rainy Window</figcaption></figure>
+        </div>
+    </main>
+    <footer>
+        <section class="footercontact">
+            <img src="images/preston-map.png" alt="Location Map of Preston Idaho">
+            <div>
+                <p>Cloudy With a Chance of Fun</p>
+                <p>&#127968;: 123 Anywhere Dr<br />
+                    Preston, ID 83263</p>
+                <p>&phone;: 555-555-5555</p>
+                <p>&#9993;: cloudywithachanceoffun@someemail.com</p>
+            </div>
+        </section>
+        <section class="footerbar">
+            <p>&copy; Cloudy With a Chance of Fun | Attributions | Devin Dunn</p>
+            <span id="date"></span>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Concert One", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/date.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/lazy.js"></script>
+</body>
+
+</html>
