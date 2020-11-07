@@ -1,0 +1,275 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    color: white;
+    padding: .5em;
+}
+
+picture {
+    width: 200px;
+    min-width: 100px;
+}
+
+picture img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: gold;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Concert One, cursive;
+}
+
+h2,
+h3 {
+    color: darkblue;
+    margin: 1em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+}
+
+header div {
+    margin: 1em;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: lightgrey;
+}
+
+nav {
+    padding: 0;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: .8em;
+    color: gold;
+}
+
+nav a:hover {
+    background-color: darkslategray;
+    color: gold;
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+    color: black;
+    background-color: gold;
+}
+
+.unhide {
+    display: block;
+}
+
+aside {
+    display: none;
+    background-color: gold;
+    padding: .5em;
+    text-align: center;
+}
+
+.herodiv {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.herodiv img {
+    width: 100%;
+}
+
+.herosection {
+    background: radial-gradient(white, darkslategrey);
+    padding: .5em;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.forecast h4 {
+    background-color: darkslategray;
+    color: gold;
+    margin: 0;
+    padding: .5em;
+}
+
+.forecast {
+    text-align: center;
+}
+
+.forecast ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.forecast ul li {
+    flex: 1 1 auto;
+    border: 1px solid black;
+}
+
+.forecast ul li p {
+    margin-top: 0;
+}
+
+.forecast ul li img {
+    width: 100%;
+}
+
+article {
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+article img {
+    width: 100%;
+    margin: 0;
+}
+
+article p {
+    padding: 1em;
+}
+
+.galleryGrid {
+    margin-bottom: 1em;
+}
+
+.galleryGrid figure img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.galleryGrid figure {
+    background-color: white;
+    max-width: 400px;
+}
+
+.galleryGrid figcaption {
+    padding: .5em;
+}
+
+.thanks {
+    text-align: center;
+    padding: 1em;
+    background-color: white;
+}
+.stormContainer {
+    width: 100%;
+    align-content: center;
+    margin: auto;
+}
+.storm fieldset {
+    width: 80%;
+    margin: 1em auto;
+
+}
+input:invalid {
+    border: 2px solid red;
+}
+.top {
+    display: block;
+    padding: .5em;
+}
+.top input {
+    display: block;
+    padding: .5em;
+    width: 95%
+}
+.top select {
+    display: block;
+    padding: .5em;
+}
+.top span#severityValue {
+    display: inline;
+}
+.sbs {
+    display: block;
+    padding: .5em;
+}
+textarea {
+    width: 100%;
+}
+#submit {
+    display: block;
+    padding: .5em;
+    margin: 1em auto;
+}
+footer {
+    margin: 0;
+}
+
+.footerbar {
+    background-color: darkslategray;
+    color: white;
+    padding: 1em;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer span {
+    font-size: 16px;
+    color: gold;
+    margin: 0;
+}
+
+.footercontact {
+    background-color: white;
+
+}
+
+.footercontact img {
+    width: 100%;
+
+}
+
+.footercontact div {
+    margin: auto;
+    width: 50%;
+}
+
+.footercontact p {
+    padding: .5em;
+}
