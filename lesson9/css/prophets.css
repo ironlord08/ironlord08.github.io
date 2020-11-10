@@ -1,0 +1,62 @@
+/*---------------------Header------------------*/
+h1, h2{
+    font-family: "Concert One", cursive;
+    text-align: center;
+    color: midnightblue;
+}
+/*---------------------Main--------------------*/
+body {
+    font-family: "Montserrat", sans-serif;
+}
+main{
+    width: 95%;
+    margin: auto;
+}
+div.cards {
+    padding: 1em;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightsteelblue;
+    box-shadow: 0 0 10px 5px #ccc;
+    
+}
+.card {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em auto;
+    background-color:  lightslategray;
+}
+img {
+    margin: auto;
+    max-width: 75%;
+}
+/*---------------------Art/Sec/Form------------*/
+
+/*---------------------Grid--------------------*/
+@media only screen and (min-width: 32.5em) {
+    div.cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+    }
+    .card{
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 70em) {
+    div.cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*---------------------Footer------------------*/
+footer {
+    background-color: lightslategray;
+    text-align: center;
+    padding: 1em;
+    width: 95%;
+    margin: auto;
+}

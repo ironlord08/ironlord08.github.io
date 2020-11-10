@@ -1,0 +1,35 @@
+table {
+    margin: 1em auto;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 5px 5px 10px #628ca6;
+}
+table, th, td{
+    border: 1px solid  black;
+    border-collapse: collapse;
+    padding: .5em;
+}
+th{
+    color: white;
+    background-color: #628ca6;
+}
+thead th{
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 1.5rem;
+}
+tfoot td{
+    background-color: #7fb9c2;
+    color: black;
+    font-size: .8rem;
+}
+tr:nth-child(odd){
+    background-color: #e7f0ed;
+}
+tr:nth-child(even){
+    background-color: #e7ffed;
+}
+.exceed{
+    color: white;
+    background-color: #628ca6;
+}

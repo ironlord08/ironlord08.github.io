@@ -1,0 +1,31 @@
+@media only screen and (min-width: 32.5em) {
+    main, footer{
+        max-width: 90%;
+        margin: auto;
+    }
+    .herosection{
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        padding: .5em;
+        opacity: .85;
+    }
+    article img{
+        width: 25%;
+        float: right;
+    }
+    .footercontact{
+        display: flex;
+        overflow-wrap: anywhere;
+    }
+    .footercontact img{
+        width: 50%;
+    }
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .storm fieldset {
+        width: 70%;
+    }
+}
