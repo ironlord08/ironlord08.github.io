@@ -29,4 +29,12 @@
     .storm fieldset {
         width: 60%;
     }
+    div.cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5em;
+    }
+    .card{
+        display: block;
+    }
 }
