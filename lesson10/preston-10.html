@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Preston Weather Page</title>
+    <meta name="description" content="Weather Page for Preston Idaho">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <aside class="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <header>
+        <picture>
+            <img src="images/weather-logo.png" alt="Cloudy Sun Logo Image">
+        </picture>
+        <div>
+            <h1>Cloudy With a Chance of Fun</h1>
+            <p>Never let the weather rain on your parade</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li><a class="active" href="preston-10.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, ID</h2>
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/lake700.jpg" media="(min-width: 400px) and (max-width: 749px)">
+                <source srcset="images/lake1000.jpg" media="(min-width: 750px)">
+                <img src="images/lake400.jpg" alt="Pristine Lake">
+            </picture>
+            <section class="herosection">
+                <h3>Weather Summary</h3>
+                <table class="currentWeather">
+                    <tr>
+                        <td class="right">Currently:</td>
+                        <td class="left"><span id="current"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="right">Temp:</td>
+                        <td class="left"><span id="temp"></span>&deg; F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Chill:</td>
+                        <td class="left"><span id="windChill"></span>&deg; F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Humidity:</td>
+                        <td class="left"><span id="humidity"></span>%</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Speed:</td>
+                        <td class="left"><span id="windSpeed"></span> mph</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <ul>
+                <li>
+                    <h4 id="dayofweek1"></h4>
+                    <img src="images/forecast.png" alt="Sun image" id="wicon1">
+                    <p><span id="temp1"></span>&deg; F</p>
+                </li>
+                <li>
+                    <h4 id="dayofweek2"></h4>
+                    <img src="images/forecast.png" alt="Sun image" id="wicon2">
+                    <p><span id="temp2"></span>&deg; F</p>
+                </li>
+                <li>
+                    <h4 id="dayofweek3"></h4>
+                    <img src="images/forecast.png" alt="Sun image" id="wicon3">
+                    <p><span id="temp3"></span>&deg; F</p>
+                </li>
+                <li>
+                    <h4 id="dayofweek4"></h4>
+                    <img src="images/forecast.png" alt="Sun image" id="wicon4">
+                    <p><span id="temp4"></span>&deg; F</p>
+                </li>
+                <li>
+                    <h4 id="dayofweek5"></h4>
+                    <img src="images/forecast.png" alt="Sun image" id="wicon5">
+                    <p><span id="temp5"></span>&deg; F</p>
+                </li>
+            </ul>
+        </div>
+        <article>
+            <h3>Article</h3>
+            <img src="images/rsz_skilift.jpg" alt="Woman on ski lift">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, libero laudantium iste, ipsa harum commodi
+                laborum nisi perferendis explicabo asperiores sed nihil unde iure dolor saepe laboriosam exercitationem
+                accusamus pariatur!</p>
+        </article>
+    </main>
+    <footer>
+        <section class="footercontact">
+            <img src="images/preston-map.png" alt="Location Map of Preston Idaho">
+            <div>
+                <p>Cloudy With a Chance of Fun</p>
+                <p>&#127968;: 123 Anywhere Dr<br />
+                    Preston, ID 83263</p>
+                <p>&phone;: 555-555-5555</p>
+                <p>&#9993;: cloudywithachanceoffun@someemail.com</p>
+            </div>
+        </section>
+        <section class="footerbar">
+            <p>&copy; Cloudy With a Chance of Fun | Weather by OpenWeatherMap | Devin Dunn</p>
+            <span id="date"></span>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Concert One", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/date.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/currentweather.js"></script>
+    <script src="js/forecast.js"></script>
+
+</body>
+
+</html>
