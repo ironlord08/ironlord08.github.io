@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cloudy With a Chance of Fun</title>
+    <meta name="description" content="Home page that details local weather and events in the surrounding area">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/weather-logo.png" alt="Cloudy Sun Logo Image">
+        </picture>
+        <div>
+            <h1>Cloudy With a Chance of Fun</h1>
+            <p>Never let the weather rain on your parade</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Home</h2>
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/hero700.jpg" media="(min-width: 400px) and (max-width: 749px)">
+                <source srcset="images/hero1000.jpg" media="(min-width: 750px)">
+                <img src="images/hero400.jpg" alt="Canyon River">
+            </picture>
+        </div>
+
+        <h3>Area Information</h3>
+        <div class="cards"></div>
+
+        <article>
+            <h3>Event Spotlight</h3>
+            <img src="images/ferriswheel.jpg" alt="Ferris wheel at night">
+            <h4>State Fair</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis in itaque iure atque animi unde a doloremque officiis nisi totam, eum aperiam impedit ut expedita eos magnam eaque repellat ex.</p>
+        </article>
+    </main>
+    <footer>
+        <section class="footercontact">
+            <!-- <img src="images/preston-map.png" alt="Location Map of Preston Idaho"> -->
+            <div class="contactSolo">
+                <p>Cloudy With a Chance of Fun</p>
+                <p>&#127968;: 123 Anywhere Dr<br />
+                    Preston, ID 83263</p>
+                <p>&phone;: 555-555-5555</p>
+                <p>&#9993;: cloudywithachanceoffun@someemail.com</p>
+            </div>
+        </section>
+        <section class="footerbar">
+            <p>&copy; Cloudy With a Chance of Fun | Attributions | <a href="home-wireframes.html">Wireframes</a> | Devin Dunn</p>
+            <span id="date"></span>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Concert One", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/date.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/towns.js"></script>
+</body>
+
+</html>

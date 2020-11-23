@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Storm Center</title>
+    <meta name="description" content="Storm Center for reporting weather events in Idaho">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/weather-logo.png" alt="Cloudy Sun Logo Image">
+        </picture>
+        <div>
+            <h1>Cloudy With a Chance of Fun</h1>
+            <p>Never let the weather rain on your parade</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <div class="stormContainer">
+            <form action="thanks.html" method="get" class="storm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">Full Name*<input type="text" name="name" id="name" required
+                            pattern="(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})"></label>
+                    <label class="top">Email<input type="email" name="email" id="email"
+                            placeholder="example@demo.com"></label>
+                    <label class="top">Phone*<input type="tel" name="phone" id="phone" required></label>
+                    <label class="top">Zip Code*<input type="number" name="zip" id="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date<input type="date" name="stormDate" id="stormDate"></label>
+                    <label class="top">Storm Type<input name="stormType" id="stormType" list="stormList"></label>
+                    <datalist id="stormList">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <label class="top">Storm Severity<input type="range" name="severity" id="severity" value="5" min="1"
+                            max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
+                            onchange="adjustRating(this.value)">
+                        <span id="severityValue">5</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <label class="top">Storm Region<select name="region" id="region">
+                        <option value="" disabled>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select></label>
+                </fieldset>
+                <fieldset>
+                    <legend>User In Danger</legend>
+                    <label class="sbs"><input type="radio" name="danger" id="dangerYes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" id="dangerMaybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" id="dangerNo"> No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="top">Relevant Details<textarea name="addInfo" id="addInfo" rows="4"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Report Weather" name="submit" id="submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <section class="footercontact">
+            <div class="contactSolo">
+                <p>Cloudy With a Chance of Fun</p>
+                <p>&#127968;: 123 Anywhere Dr<br />
+                    Preston, ID 83263</p>
+                <p>&phone;: 555-555-5555</p>
+                <p>&#9993;: cloudywithachanceoffun@someemail.com</p>
+            </div>
+        </section>
+        <section class="footerbar">
+            <p>&copy; Cloudy With a Chance of Fun | Attributions | Devin Dunn</p>
+            <span id="date"></span>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Concert One", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/date.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
