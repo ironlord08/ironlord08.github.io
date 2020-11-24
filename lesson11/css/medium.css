@@ -19,9 +19,7 @@
         display: flex;
         overflow-wrap: anywhere;
     }
-    .footercontact img{
-        width: 50%;
-    }
+    
     .galleryGrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
