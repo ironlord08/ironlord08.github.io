@@ -23,12 +23,14 @@ h1 {
 
 h1,
 h2,
-h3, h4 {
+h3,
+h4 {
     font-family: Concert One, cursive;
 }
 
 h2,
-h3, h4 {
+h3,
+h4 {
     color: darkblue;
     margin: 1em;
     text-align: center;
@@ -43,7 +45,7 @@ h3 {
     margin-bottom: 14px;
 }
 
-h4{
+h4 {
     font-size: 18px;
     font-style: italic;
 }
@@ -121,7 +123,8 @@ aside {
     background: radial-gradient(white, darkslategrey);
     padding: .5em;
 }
-.herosection h3{
+
+.herosection h3 {
     margin: .25em auto;
 }
 
@@ -136,9 +139,11 @@ aside {
 #current {
     text-transform: capitalize;
 }
-.currentWeather{
+
+.currentWeather {
     margin: auto;
 }
+
 .forecast h4 {
     background-color: darkslategray;
     color: gold;
@@ -171,6 +176,7 @@ aside {
 .forecast ul li img {
     max-width: 50px;
 }
+
 div.cards {
     padding: .5em;
     margin: auto;
@@ -180,14 +186,16 @@ div.cards {
     border: 1px solid black;
     background-color: darkslategrey;
     box-shadow: 0 0 10px 5px #ccc;
-    
+
 }
+
 .card {
     border: 1px solid black;
     padding: .5em;
     margin: .5em auto;
-    background-color:  white;
+    background-color: white;
 }
+
 .card h3 {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -198,21 +206,22 @@ div.cards {
     padding-top: 0;
     height: 40px;
 }
+
 .card img {
     margin: auto;
     max-width: 75%;
 }
 
-.events{
+.events {
     background: radial-gradient(white, darkslategrey);
     list-style: none;
     text-align: center;
-    width: fit-content;
+    max-width: 500px;
     margin: auto;
     padding: .5em;
 }
 
-.events li{
+.events li {
     padding: .5em;
 }
 
@@ -226,7 +235,8 @@ article img {
     max-width: 500px;
     margin: 0;
 }
-article h4{
+
+article h4 {
     text-align: left;
     margin: 0 0 auto;
     padding: .5em;
@@ -260,57 +270,68 @@ article p {
     padding: 1em;
     background-color: white;
 }
+
 .stormContainer {
     width: 100%;
     align-content: center;
     margin: auto;
 }
+
 .storm fieldset {
     width: 80%;
     margin: 1em auto;
 
 }
+
 input:invalid {
     border: 2px solid red;
 }
+
 .top {
     display: block;
     padding: .5em;
 }
+
 .top input {
     display: block;
     padding: .5em;
     width: 95%
 }
+
 .top select {
     display: block;
     padding: .5em;
 }
+
 .top span#severityValue {
     display: inline;
 }
+
 .sbs {
     display: block;
     padding: .5em;
 }
+
 textarea {
     width: 100%;
 }
+
 #submit {
     display: block;
     padding: .5em;
     margin: 1em auto;
 }
+
 footer {
     margin: 0;
     background-color: white;
 }
 
-.social img{
+.social img {
     max-width: 50px;
 }
 
-.social{
+.social {
     padding: 0 .5em;
 }
 
@@ -327,9 +348,10 @@ footer p {
     margin: 0;
 }
 
-footer a{
+footer a {
     color: gold;
 }
+
 footer span {
     font-size: 16px;
     color: gold;
@@ -347,6 +369,7 @@ footer span {
 .footercontact div {
     margin: auto;
     width: auto;
+    text-align: center;
 }
 
 .footercontact p {

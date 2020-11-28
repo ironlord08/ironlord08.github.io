@@ -1,40 +1,52 @@
 @media only screen and (min-width: 70em) {
-    main, footer{
+
+    main,
+    footer {
         max-width: 80%;
         margin: auto;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
     }
-    nav ul li{
+
+    nav ul li {
         flex: 1 1 auto;
     }
-    nav{
+
+    nav {
         display: block;
     }
-    header button{
+
+    header button {
         display: none;
     }
-    .herosection{
+
+    .herosection {
         left: 50px;
         top: 50px;
     }
+
     .galleryGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
     .galleryGrid figure:hover {
         box-shadow: 0 0 50px #333;
     }
+
     .storm fieldset {
         width: 60%;
     }
+
     div.cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: .5em;
     }
-    .card{
+
+    .card {
         display: block;
     }
 }
