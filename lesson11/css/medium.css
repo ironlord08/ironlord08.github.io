@@ -24,10 +24,19 @@
     .footercontact {
         display: flex;
         overflow-wrap: anywhere;
+        text-align: left;
     }
 
-    .footercontact div {
+    .contactjoin{
         text-align: left;
+    }
+
+    .contactjoin h4{
+        text-align: left;
+        margin-left: .5em;
+    }
+    .contactsolo{
+        text-align: center;
     }
 
     .galleryGrid {

@@ -364,9 +364,10 @@ footer span {
 
 .contactSolo {
     text-align: center;
+    margin: auto;
 }
 
-.footercontact div {
+.contactjoin {
     margin: auto;
     width: auto;
     text-align: center;
