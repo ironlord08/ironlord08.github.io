@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact Confirmation</title>
+    <meta name="description" content="Confirmation of message recieved">
+    <link rel="shortcut icon" href="images/scootsicon.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <aside class="message"><span id="alertName"></span> <span id="alertTitle"></span> <span id="alertDesc"></span> <button onclick="toggleMsg()">&#10005;</button></aside>
+    <header>
+        <picture class="logo">
+            <img src="images/scootslogowhite.png" alt="Simple ATV">
+        </picture>
+        <div>
+            <h1>~Scoots</h1>
+            <p>Paradise awaits</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Message Sent</h2>
+        <p class="confirmation">Thank you for contacting us.  We will respond as quickly as possible.</p>
+    </main>
+    <footer>
+        <p>&copy; ~Scoots <span id="year"></span> | <a href="references.html">References</a> | Devin Dunn</p>
+        <span id="lastupdated"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Bangers", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/lastUpdated.js"></script>
+
+</body>
+
+</html>

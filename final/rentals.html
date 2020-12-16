@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Scoots Rental Information</title>
+    <meta name="description" content="Scoots Rental information and details about rental options">
+    <link rel="shortcut icon" href="images/scootsicon.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <img src="images/scootslogowhite.png" alt="Simple ATV">
+        </picture>
+        <div>
+            <h1>~Scoots</h1>
+            <p>Paradise awaits</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- <div class="herodiv">
+            <picture>
+                <source srcset="images/palmTree700.jpg" media="(min-width: 500px) and (max-width: 749px)">
+                <source srcset="images/palmTree1000.jpg" media="(min-width: 750px)">
+                <img src="images/palmTree500.jpg" alt="Scooters on the road">
+            </picture>
+        </div> -->
+        <table class="rentals">
+            <thead>
+                <tr>
+                    <th colspan="7" class="rentalHeader">Available Rentals</th>
+                </tr>
+                <tr>
+                    <th colspan="3"></th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Preview</th>
+                    <th>Rental Type</th>
+                    <th>Max Passengers</th>
+                    <th>Half Day<br />3 hrs</th>
+                    <th>Full Day</th>
+                    <th>Half Day<br />3 hrs</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody class="rentalData"></tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; ~Scoots <span id="year"></span> | <a href="references.html">References</a> | Devin Dunn</p>
+        <span id="lastupdated"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Bangers", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/lastUpdated.js"></script>
+    <script src="js/rentals.js"></script>
+
+</body>
+
+</html>

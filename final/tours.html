@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Scoots Tour Information</title>
+    <meta name="description" content="Tour information about the surrounding area and potential destinations">
+    <link rel="shortcut icon" href="images/scootsicon.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <img src="images/scootslogowhite.png" alt="Simple ATV">
+        </picture>
+        <div>
+            <h1>~Scoots</h1>
+            <p>Paradise awaits</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a class="active" href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>The Island of Cozumel</h2>
+        <div class="homeGrid">
+            <section class="hc1">
+                <h3>History</h3>
+                <p>The Maya are believed to have first settled Cozumel by the early part of the 1st millennium AD, and older Preclassic Olmec artifacts have been found on the island as well. The island was sacred to Ix Chel, the Maya Moon Goddess, and the temples here were a place of pilgrimage, especially by women desiring fertility. There are a number of ruins on the island, most from the Post-Classic period. The largest Maya ruins on the island were near the downtown area and have now been destroyed. Today, the largest remaining ruins are at San Gervasio, located approximately at the center of the island.</p>
+                
+                <p>The first Spanish expedition to visit Cozumel was led by Juan de Grijalva in 1518. In the following year Hernán Cortés stopped by the island on his way to Veracruz. The Grijalva and Cortés expeditions were both received peacefully by the Maya of Cozumel, unlike the expeditions' experiences on other parts of the mainland. Even after Cortés destroyed some of the Maya idols on Cozumel and replaced them with an image of the Virgin Mary, the native inhabitants of the island continued to help the Spanish re-supply their ships with food and water so they could continue their voyages. Gerónimo de Aguilar was rescued at this time.</p>
+                
+                <p>As many as 10,000 Maya lived on the island then, but in 1520, infected crew members of the Pánfilo Narváez expedition brought the smallpox contagion to the island and by 1570 only 186 men and 172 women were left alive on Cozumel. In the ensuing years Cozumel was often the target of attacks by pirates, and in 1650 many of the islanders were forcibly relocated to the mainland town of Xcan Boloná to avoid the Buccaneers’ predation. Later, in 1688, most of the rest of the island's population, as well as many of the settlements along the Quintana Roo coast, were evacuated inland to towns such as Chemax.</p>
+                
+                <p>In 1848, refugees escaping the tumult of the Caste War of Yucatán settled on the island and in 1849 the town of San Miguel de Cozumel was officially recognized by the Mexican government.</p>
+            </section>
+
+            <img src="images/parasail.jpg" alt="" class="hi1">
+            <section class="hc2">
+                <h3>Parasailing Perfection</h3>
+                <p>Are you an adrenaline junkie?  Then buckle up and get ready for the ride of a lifetime.  Parasailing is one of the most fun and exciting activities on Cozumel.  Feel the wind in your face as you soar up to 600 feet in the air on one of our parasailing tours.  This is something that is guaranteed to get your blood pumping and give you a story to tell for the rest of your life!</p>
+            </section>
+
+            <img src="images/snorkel.jpg" alt="Drink on beach" class="hi2">
+            <section class="hc3">
+                <h3>Snorkel Suprise</h3>
+                <p>Come and see the beautiful wildlife that the ocean has to offer.  The reefs are amazing and the sea creatures are full of life.  Come and see a beauty that you could never imagine.  Take a guided snorkel tour or venture out on your own for a unique adventure.  You will be amazed at all of the wonderful colors and wildlife hiding beneath the surface.  Take the plunge today!</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; ~Scoots <span id="year"></span> | <a href="references.html">References</a> | Devin Dunn</p>
+        <span id="lastupdated"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Bangers", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/lastUpdated.js"></script>
+
+</body>
+
+</html>

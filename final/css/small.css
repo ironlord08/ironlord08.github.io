@@ -1,0 +1,324 @@
+/*---------------------Header------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkred;
+    color: white;
+    padding: .5em;
+}
+
+.logo {
+    width: 200px;
+    min-width: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Bangers, cursive;
+}
+
+h2,
+h3,
+h4 {
+    color: darkred;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    padding: .5em;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+h4 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+header p {
+    margin: 0;
+}
+
+header div {
+    margin: 1em;
+}
+.unhide {
+    display: block;
+}
+.hide{
+    display: none;
+}
+.message{
+    display: none;
+}
+/*---------------------Nav---------------------*/
+nav {
+    padding: 0;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: .8em;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: darkred;
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
+    color: darkred;
+    background-color: white;
+}
+.logo{
+    max-width: 170px;
+}
+/*---------------------Main--------------------*/
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: lightgrey;
+}
+
+main{
+    background-color: white;
+}
+
+.herodiv{
+    text-align: center;
+}
+
+.herodiv img{
+    width: 100%;
+    max-width: 1000px;
+}
+.social a img {
+    max-width: 50px;
+}
+
+.social {
+    text-align: center;
+    margin: 1em;
+}
+
+.homeGrid{
+    padding: 1em;
+}
+.homeGrid img{
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.homeGrid p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.contactContainer{
+    margin: auto;
+    text-align: center;
+}
+.contactInfo{
+    margin: 1em auto;
+}
+.map{
+    margin: auto;
+}
+iframe{
+    width: 100%;
+}
+/*---------------------Forecast------------*/
+.weathersection {
+    background: radial-gradient(white, black);
+    padding: .5em;
+    max-width: 500px;
+    margin: auto;
+}
+
+.weathersection h3 {
+    margin: .25em auto;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+#current {
+    text-transform: capitalize;
+}
+
+.currentWeather {
+    margin: auto;
+}
+
+.forecast h4 {
+    background-color: darkred;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    padding: .5em;
+} 
+
+.forecast {
+    padding: 1em;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.forecast ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: lightgray;
+}
+
+.forecast ul li {
+    flex: 1 1 auto;
+    border: 1px solid black;
+}
+
+.forecast ul li p {
+    margin-top: 0;
+}
+
+.forecast ul li img {
+    max-width: 50px;
+}
+/*---------------------Art/Sec/Form------------*/
+.rentalDetails li{
+    padding: .5em;    
+}
+.rentalDetails ul{
+    margin: auto;
+    width: fit-content;
+}
+.resContainer, .contact {
+    width: 80%;
+    align-content: center;
+    margin: 1em auto;
+}
+
+.reservation fieldset .contactForm fieldset{
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input{
+    margin-bottom: .5em;
+}
+.top {
+    padding: .5em;
+}
+
+.top input {
+    padding: .5em;
+    width: 95%
+}
+
+.top select {
+    padding: .5em;
+}
+
+textarea {
+    width: 100%;
+}
+
+#submit {
+    display: block;
+    padding: .5em;
+    margin: 1em auto;
+
+} 
+.confirmation{
+    text-align: center;
+    padding: 1em;
+}
+/*---------------------Table-------------------*/
+.rentals, .rentals th, .rentals td{
+    border: 1px solid  black;
+    border-collapse: collapse;
+    padding: .5em;
+}
+.rentals{
+    text-align: center;
+    width: 100%;
+    margin: 1em auto;
+    
+}
+.rentals img{
+    width: 100%;
+    max-width: 300px;
+}
+.rentalHeader{
+    background-color: darkred;
+    color: white;
+    font-family: Bangers, cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+/*---------------------Footer------------------*/
+footer {
+    background-color: darkred;
+    color: white;
+    padding: 1em;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+}
+
+footer span {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}

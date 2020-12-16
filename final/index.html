@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Scoots Island Scooter Rental</title>
+    <meta name="description" content="Scoots Rental Page for Scooter rental in Cozumel Mexico">
+    <link rel="shortcut icon" href="images/scootsicon.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <aside class="message"><span id="alertName"></span> <span id="alertTitle"></span> <span id="alertDesc"></span> <button onclick="toggleMsg()">&#10005;</button></aside>
+    <header>
+        <picture class="logo">
+            <img src="images/scootslogowhite.png" alt="Simple ATV">
+        </picture>
+        <div>
+            <h1>~Scoots</h1>
+            <p>Paradise awaits</p>
+        </div>
+        <button onclick="toggleNav()">&#9776; Menu</button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/hero700.jpg" media="(min-width: 500px) and (max-width: 749px)">
+                <source srcset="images/hero1000.jpg" media="(min-width: 750px)">
+                <img src="images/hero500.jpg" alt="Scooters on the road">
+            </picture>
+        </div>
+        <div class="homeGrid">
+            
+            <section class="hc1">
+                <h2>Bienvenidos</h2>
+                <p>Welcome to Scoots!  Your one-stop-shop for everything scooters.  We are the best in the business when it comes to getting you where you need to go on the island of Cozumel, Mexico.  We are here for you to make planning your vacation a breeze.  We have all the information you need to plan ahead so you can vacation in peace.</p>
+            </section>
+
+            <img src="images/oceanruins.jpg" alt="" class="hi1">
+            <section class="hc2">
+                <p>We offer a large variety of rentals to satisfy every need.  Whether you want to zoom around on scooter by yourself, or take the whole family for a spin in one of our Jeeps, we have you covered.  We offer Honda Metro, Dio and PCX150 scooters as well as the Honda Pioneer ATV.  We also have 2 door Jeeps as well as 4 door Jeeps with air conditioning.</p>
+            </section>
+
+            <img src="images/beach.jpg" alt="Drink on beach" class="hi2">
+            <section class="hc3">
+                <p>We are excited to help you make an unforgettable memory on one of the most beautiful islands in the world.  Let us take care of you so your vacation can be stress-free and full of joy. Don't wait <a href="reservations.html">book today</a>!</p>
+            </section>
+            <section class="social">
+                <h3>Visit us on socail media!</h3>
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter logo"></a>
+                <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="Youtube logo"></a>
+            </section>
+        </div>
+        <div class="weather">
+            <section class="weathersection">
+                <h3>Weather Summary</h3>
+                <table class="currentWeather">
+                    <tr>
+                        <td class="right">Currently:</td>
+                        <td class="left"><span id="current"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="right">Temp:</td>
+                        <td class="left"><span id="temp"></span>&deg; F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Humidity:</td>
+                        <td class="left"><span id="humidity"></span>%</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="forecast">
+                <h3>3 Day Forecast</h3>
+                <ul>
+                    <li>
+                        <h4 id="dayofweek1"></h4>
+                        <img src="" alt="" id="wicon1">
+                        <p><span id="temp1"></span>&deg; F</p>
+                    </li>
+                    <li>
+                        <h4 id="dayofweek2"></h4>
+                        <img src="" alt="" id="wicon2">
+                        <p><span id="temp2"></span>&deg; F</p>
+                    </li>
+                    <li>
+                        <h4 id="dayofweek3"></h4>
+                        <img src="" alt="" id="wicon3">
+                        <p><span id="temp3"></span>&deg; F</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; ~Scoots <span id="year"></span> | <a href="references.html">References</a> | Devin Dunn</p>
+        <span id="lastupdated"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    "Bangers", "Montserrat"
+                ]
+            }
+        });
+    </script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/lastUpdated.js"></script>
+    <script src="js/weather.js"></script>
+
+</body>
+
+</html>
